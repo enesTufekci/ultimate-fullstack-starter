@@ -1,0 +1,40 @@
+{
+  "name": "graphql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "prestart": "docker-compose up -d",
+    "start": "nodemon src/index.ts --exec babel-node --extensions '.ts' src/index.ts",
+    "build": "babel --extensions '.ts' src --out-dir dist"
+  },
+  "dependencies": {
+    "apollo-server": "^2.8.1",
+    "express": "^4.17.1",
+    "graphql": "^14.4.2",
+    "pg": "^7.11.0",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^0.17.4",
+    "typeorm": "^0.2.17"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-typescript": "^7.3.3",
+    "@babel/register": "^7.4.4",
+    "@babel/runtime": "^7.4.5",
+    "@types/babel-core": "^6.25.6",
+    "@types/express": "^4.17.0",
+    "@types/graphql": "^14.2.0",
+    "@types/pg": "^7.4.14",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "babel-plugin-transform-typescript-metadata": "^0.2.2",
+    "dotenv": "^8.0.0",
+    "nodemon": "^1.19.1"
+  }
+}

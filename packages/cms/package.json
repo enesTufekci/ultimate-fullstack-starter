@@ -1,0 +1,68 @@
+{
+  "name": "cms",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "postcodegen": "node scripts/postcodegen.js",
+    "codegen": "graphql-codegen --config codegen.yml"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@types/yup": "^0.26.22",
+    "antd": "^3.16.5",
+    "apollo-boost": "^0.4.3",
+    "apollo-link-context": "^1.0.17",
+    "apollo-link-error": "^1.1.11",
+    "apollo-link-http": "^1.5.15",
+    "cookie": "^0.3.1",
+    "formik": "^1.5.8",
+    "graphql": "^14.2.1",
+    "graphql-tag": "^2.10.1",
+    "ramda": "^0.26.1",
+    "react": "^16.8.6",
+    "react-apollo": "^2.5.5",
+    "react-apollo-hooks": "^0.4.5",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.0",
+    "yup": "^0.27.0"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^1.0.6",
+    "@graphql-codegen/fragment-matcher": "1.0.6",
+    "@graphql-codegen/introspection": "^1.0.6",
+    "@graphql-codegen/typescript": "1.0.6",
+    "@graphql-codegen/typescript-graphql-files-modules": "1.0.6",
+    "@graphql-codegen/typescript-operations": "1.0.6",
+    "@graphql-codegen/typescript-react-apollo": "1.0.6",
+    "@types/cookie": "^0.3.2",
+    "@types/graphql": "^14.2.0",
+    "@types/http-proxy-middleware": "^0.19.2",
+    "@types/node": "^11.13.8",
+    "@types/ramda": "^0.26.8",
+    "@types/react": "^16.8.14",
+    "@types/react-dom": "^16.8.4",
+    "@types/react-router-dom": "^4.3.4",
+    "babel-plugin-import": "^1.11.0",
+    "http-proxy-middleware": "^0.19.1",
+    "typescript": "^3.4.5"
+  }
+}

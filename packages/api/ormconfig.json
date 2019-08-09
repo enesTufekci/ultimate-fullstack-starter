@@ -1,0 +1,11 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5001,
+  "username": "root",
+  "password": "secret",
+  "database": "api",
+  "entities": ["src/entity/*.ts"],
+  "logging": true,
+  "synchronize": true
+}
