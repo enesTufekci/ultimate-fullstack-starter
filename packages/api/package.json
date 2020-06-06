@@ -9,7 +9,7 @@
     "build": "babel --extensions '.ts' src --out-dir dist"
   },
   "dependencies": {
-    "apollo-server": "^2.8.1",
+    "apollo-server": "^2.14.2",
     "express": "^4.17.1",
     "graphql": "^14.4.2",
     "pg": "^7.11.0",
